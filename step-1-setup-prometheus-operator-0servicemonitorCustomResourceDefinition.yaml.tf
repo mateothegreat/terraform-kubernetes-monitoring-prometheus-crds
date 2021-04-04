@@ -2,6 +2,16 @@ resource "kubernetes_manifest" "servicemonitors_monitoring_coreos_com" {
 
     provider = kubernetes-alpha
 
+    wait_for = {
+
+        fields = {
+
+            "spec.scope" = "Namespaced"
+
+        }
+
+    }
+
     manifest = {
         "apiVersion": "apiextensions.k8s.io/v1",
         "kind": "CustomResourceDefinition",

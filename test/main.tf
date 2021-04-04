@@ -45,6 +45,6 @@ module "test" {
 
     source = "../"
 
-    operator_namespace = "test-operator-1"
+    operator_namespace = "monitoring-prometheus"
 
 }

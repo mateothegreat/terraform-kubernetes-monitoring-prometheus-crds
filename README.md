@@ -1,4 +1,4 @@
-# Prometheus operator instrumented by Terraform
+# Prometheus operator CRD's instrumented by Terraform
 
 ### Set up the aws provider (optional)
 
